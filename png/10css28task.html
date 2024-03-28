@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            border: 1px solid;
+            height: 850px;
+            width: 600px;
+            border-radius: 20px;
+            background-color:grey;
+            
+
+        }
+        .cd{
+            background-color: brown;
+            height: 100px;
+            width: 100px;
+            margin-top:50px;
+            margin-left: 90px;
+            transform: translate(200px);
+            /* transform: perspective(100px) scale(1.5) rotate(40deg); */
+        }
+        .input:active ~ .cd{
+            transform: perspective(100px);
+            
+        }
+        .cd1{
+            background-color: chartreuse;
+            height: 100px;
+            width: 100px;
+            margin-top: 50px;
+            margin-left: 90px;
+            transform: translate(200px);
+        }
+        .input1:active~ .cd1{
+            transform: perspective(100px) scale(1.5);
+
+        }
+        .cd2{
+            background-color: rgb(231, 131, 9);
+            height: 100px;
+            width: 100px;
+            margin-top: 50px;
+            margin-left: 90px;
+            transform: translate(200px);
+        }
+        .input2:active ~ .cd2{
+            transform: perspective(100px) rotatey(50deg);
+        }
+        .cd3{
+            background-color: aqua;
+            height: 100px;
+            width: 100px;
+            margin-top: 50px;
+            margin-left: 90px;
+            transform: translate(200px);
+        }
+        .input3:active ~ .cd3{
+            transform: perspective(50px) skew(50deg);
+        }
+        .cd4{
+            background-color: forestgreen;
+            height: 100px;
+            width: 100px;
+            margin-top: 50px;
+            margin-left: 90px;
+            transform: translate(200px);
+        }
+        .input4:active ~ .cd4{
+            transform: perspective(50px);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <input class="input" type="radio">radio
+     <div class="cd">
+            <div class="satya">item</div>
+     </div>
+        <input class="input1" type="radio">radio1
+    <div class="cd1">
+        <div class="satya1">item1</div>
+    </div>
+        <input class="input2" type="radio">radio2
+    <div class="cd2">
+          <div class="satya2">item2</div>
+    </div>
+    <input class="input3" type="radio">radio3
+    <div class="cd3">
+          <div class="satya3">item3</div>
+    </div>
+    <input class="input4" type="radio">radio4
+    <div class="cd4">
+          <div class="satya4">item4</div>
+    </div>
+    
+
+    </div>
+    
+</body>
+</html>
